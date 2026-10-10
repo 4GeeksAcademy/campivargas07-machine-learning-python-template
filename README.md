@@ -37,12 +37,16 @@ filas, incluidos siete duplicados adicionales de texto. No hubo truncamientos.
 | Dependencias y pesos | [requirements.txt](requirements.txt) fija versiones exactas de las dependencias del análisis; [.gitignore](.gitignore) excluye cachés, entornos y pesos. Los pesos permanecen fuera del repositorio. |
 | Verificaciones reproducibles | [tests/test_app.py](tests/test_app.py): seis pruebas de mapeo, conservación, serialización, selección y cobertura real. |
 
-## Límites Y Pendientes
+## Revisión Y Límites
 
-La lectura de los 20 ejemplos fue realizada por el agente **con asistencia de
-IA, no por una persona**. Los campos de validación y comentario humano siguen
-pendientes. Para cumplir literalmente la revisión manual humana de la rúbrica,
-el estudiante debe leer los textos y completar esos campos antes de entregar.
+La interpretación inicial de los 20 ejemplos fue realizada por el agente
+**con asistencia de IA**. El estudiante confirmó haber realizado después la
+validación humana de los ejemplos y publicado el proyecto en GitHub.
+Las notas originales de IA se conservan identificadas como tales; no se
+presentan como comentarios escritos por una persona. En las salidas guardadas
+de la tabla, los campos de validación y comentario humano aún muestran
+`pendiente`: la confirmación del estudiante queda documentada aquí, pero
+las decisiones individuales no están registradas en esos campos.
 Una discrepancia con rating no confirma por sí sola un error, y la muestra
 focalizada no estima la tasa poblacional de errores.
 
@@ -72,10 +76,18 @@ python -W error -m unittest discover -s tests -v
 No se necesita PostgreSQL ni `DATABASE_URL` para WeLoveReviews. Consulta
 [README.es.md](README.es.md) para opciones de columnas, rutas y ejecución.
 
-Antes de entregar, completar la validación humana y publicar los cambios en el
-repositorio propio de GitHub. Incluir el notebook con salidas, el script y el
-CSV procesado; no incluir pesos ni entornos. Entregar el enlace siguiendo el
-proceso del instructor. La publicación no se realiza automáticamente.
+## Enlace Para Revisión
+
+[Repositorio de WeLoveReviews en GitHub](https://github.com/4GeeksAcademy/campivargas07-machine-learning-python-template)
+
+La entrega contiene el notebook con salidas ejecutadas, el script de inferencia
+y el CSV con las 500 predicciones. La validación humana fue confirmada por el
+estudiante; las limitaciones y la evidencia disponible se describen arriba.
+La comparación opcional con otro modelo no forma parte de esta entrega.
+
+Entregar este enlace siguiendo el proceso del instructor. Cualquier cambio
+local posterior a la publicación, incluida esta actualización del README,
+debe publicarse también para que el profesor vea la versión actualizada.
 
 ---
 
